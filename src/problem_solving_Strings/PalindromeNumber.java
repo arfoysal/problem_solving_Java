@@ -14,7 +14,6 @@ public class PalindromeNumber {
 
 		// Using algorithm
 		reverse(number);
-		
 
 		// Using StringBuffer class
 		usingStringBufferClass(number);
@@ -33,12 +32,11 @@ public class PalindromeNumber {
 			tempNumber = tempNumber / 10; // 1254; 125; 12; 1; 0;
 		}
 		if (number == rev) {
-			System.out.println("the number [ "+ number+" ] is a Palindrome Number");
+			System.out.println("This number [ " + number + " ] is a Palindrome Number");
+		} else {
+			System.out.println("This number [ " + number + " ] is not a Palindrome Number");
 		}
-		else {
-			System.out.println("the number [ "+ number+" ] is not a Palindrome Number");
-		}
-		
+
 	}
 
 	// Using StringBuffer class
@@ -48,12 +46,11 @@ public class PalindromeNumber {
 		StringBuffer revBuffer = sBuffer.reverse();
 		int revNumber = Integer.parseInt(revBuffer.toString());
 		if (revNumber == number) {
-			System.out.println("the number [ "+ number+" ] is a Palindrome Number");
+			System.out.println("This number [ " + number + " ] is a Palindrome Number");
+		} else {
+			System.out.println("This number [ " + number + " ] is not a Palindrome Number");
 		}
-		else {
-			System.out.println("the number [ "+ number+" ] is not a Palindrome Number");
-		}
-		
+
 	}
 
 	// Using StringBuilder class
@@ -63,10 +60,9 @@ public class PalindromeNumber {
 		StringBuilder revBuilder = sBuilder.reverse();
 		int revNumber = Integer.parseInt(revBuilder.toString());
 		if (revNumber == number) {
-			System.out.println("the number [ "+ number+" ] is a Palindrome Number");
-		}
-		else {
-			System.out.println("the number [ "+ number+" ] is not a Palindrome Number");
+			System.out.println("This number [ " + number + " ] is a Palindrome Number");
+		} else {
+			System.out.println("This number [ " + number + " ] is not a Palindrome Number");
 		}
 	}
 
