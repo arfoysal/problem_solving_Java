@@ -1,6 +1,6 @@
 package problem_solving_Strings;
 
-public class Pangram {
+public class PangramString {
 	/*
 	 * Write a function to check given String is pangram or not? A pangram or
 	 * holoalphabetic sentence is a sentence using every letter of a given alphabet
