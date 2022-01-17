@@ -9,11 +9,11 @@ public class SumOfDigitsInANumber {
 		int number = 12321;
 
 		// Using algorithm
-		countEvenandOdd(number);
+		countSumOfDigits(number);
 	}
 
 	// Using algorithm
-	public static void countEvenandOdd(int number) {
+	public static void countSumOfDigits(int number) {
 		int sum = 0;
 		while (number != 0) {
 			sum += number % 10; // remainder must be the last digit of the number
