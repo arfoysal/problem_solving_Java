@@ -8,7 +8,6 @@ public class CountNumberOfEvenAndOddDigit {
 	 */
 	public static void main(String[] args) {
 		int number = 12321;
-		// there are three different way to solve this problem
 
 		// Using algorithm
 		countEvenandOdd(number);
