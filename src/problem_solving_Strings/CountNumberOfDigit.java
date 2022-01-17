@@ -15,7 +15,7 @@ public class CountNumberOfDigit {
 		// Using StringBuffer class and length()
 		usingStringBufferClass(number);
 
-		// Using StringBuilder class
+		// Using StringBuilder class and length()
 		usingStringBuilderClass(number);
 
 	}
@@ -26,10 +26,9 @@ public class CountNumberOfDigit {
 		int tempNumber = number;
 		while (tempNumber != 0) {
 			tempNumber = tempNumber / 10; // 1232; 123; 12; 1; 0;
-			count += 1;		
+			count += 1;
 		}
-		System.out.println("Number of digit in  [ " + number + " ] is "+ "[ " +count+" ]");
-		
+		System.out.println("Number of digit in  [ " + number + " ] is " + "[ " + count + " ]");
 
 	}
 
@@ -37,14 +36,14 @@ public class CountNumberOfDigit {
 	public static void usingStringBufferClass(int number) {
 		StringBuffer sBuffer = new StringBuffer(String.valueOf(number)); // String.valueOf(number) convert a number to a
 																			// string
-		System.out.println("Number of digit in  [ " + number + " ] is "+ "[ " +sBuffer.length()+" ]");
+		System.out.println("Number of digit in  [ " + number + " ] is " + "[ " + sBuffer.length() + " ]");
 	}
 
 	// Using StringBuilder class
 	public static void usingStringBuilderClass(int number) {
 		StringBuilder sBuilder = new StringBuilder();
 		sBuilder.append(number);
-		System.out.println("Number of digit in  [ " + number + " ] is "+ "[ " +sBuilder.length()+" ]");
+		System.out.println("Number of digit in  [ " + number + " ] is " + "[ " + sBuilder.length() + " ]");
 	}
 
 }
