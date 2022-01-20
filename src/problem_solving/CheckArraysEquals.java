@@ -1,4 +1,4 @@
-package problem_solving_Strings;
+package problem_solving;
 
 import java.util.Arrays;
 
