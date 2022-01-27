@@ -23,6 +23,8 @@ public class FindDuplicateIElementsInArray {
 		boolean flag = true;
 		HashSet<String> hashSet = new HashSet<String>();
 		for (String item : langs) {
+			System.out.println(hashSet);
+			System.out.println(item);
 			if (!hashSet.add(item)) {
 				flag = false;
 			}
@@ -32,6 +34,8 @@ public class FindDuplicateIElementsInArray {
 		} else {
 			System.out.println("Duplicate Element Found");
 		}
+		System.out.println(hashSet);
+		System.out.println();
 
 	}
 
