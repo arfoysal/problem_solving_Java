@@ -33,18 +33,27 @@ public class ReverseNumber {
 
 	// Using StringBuffer class
 	public static void usingStringBufferClass(int number) {
-		StringBuffer sBuffer = new StringBuffer(String.valueOf(number)); // String.valueOf(number) convert a number to a
+		StringBuffer sBuffer = new StringBuffer();
+		sBuffer.append(number); //append accept all kind of data
+		//StringBuffer sBuffer = new StringBuffer(String.valueOf(number)); // String.valueOf(number) convert a number to a
 																			// string
-		StringBuffer revBuffer = sBuffer.reverse();
-		System.out.println("The reverse number is " + revBuffer);
+		//StringBuffer revBuffer = sBuffer.reverse();
+		//System.out.println("The reverse number is " + revBuffer);
+		//sBuffer.reverse();
+		System.out.println("The reverse number is " + sBuffer.reverse());
+		
 	}
 
 	// Using StringBuilder class
 	public static void usingStringBuilderClass(int number) {
 		StringBuilder sBuilder = new StringBuilder();
 		sBuilder.append(number);
-		StringBuilder revBuilder = sBuilder.reverse();
-		System.out.println("The reverse number is " + revBuilder);
+		/*
+		 * StringBuilder revBuilder = sBuilder.reverse();
+		 * System.out.println("The reverse number is " + revBuilder);
+		 */
+		//sBuilder.reverse();
+		System.out.println("The reverse number is " + sBuilder.reverse());
 	}
 
 }
