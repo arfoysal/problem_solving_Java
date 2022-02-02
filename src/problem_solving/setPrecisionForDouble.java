@@ -22,10 +22,17 @@ public class setPrecisionForDouble {
 	    System.out.println(dec.format(no));
 	    
 	   // Setting the precision to 3 places and convert to decimal at the same time
-	    double z = 2222.11;
-	    z = Double.parseDouble(new DecimalFormat("##.###").format(z));
+	    double z = 2222.81;
+	    z = Double.parseDouble(new DecimalFormat("##.").format(z));
 	    z = z + 2;
 	    System.out.println(z);
+	    
+	    double k = 2222.1;
+	    //k = Integer.parseInt(Double.toString(k));
+	    int l = (int) Math.round(k);
+	    //z = Double.parseDouble(new DecimalFormat("##.").format(z));
+	    //z = z + 2;
+	    System.out.println(l);
 
 	}
 
